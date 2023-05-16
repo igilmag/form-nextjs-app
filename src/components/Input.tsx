@@ -1,4 +1,21 @@
-export function Input ({ id, name, type = 'text', textLabel, placeholder = '' }: { id: string, name: string, type?: string, textLabel: string, placeholder?: string }) {
+type InputProps = {
+  id: string,
+  name:
+  string,
+  type?: string,
+  textLabel: string,
+  placeholder?: string,
+}
+
+export function Input (
+  {
+    id,
+    name,
+    type = 'text',
+    textLabel,
+    placeholder = '',
+    ...props
+  }: InputProps) {
   return (
     <fieldset>
         <label htmlFor={id}>{textLabel}</label>
@@ -8,6 +25,7 @@ export function Input ({ id, name, type = 'text', textLabel, placeholder = '' }:
           id={id}
           name={name}
           placeholder={placeholder}
+          {...props}
         />
     </fieldset>
   )
