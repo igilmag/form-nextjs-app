@@ -8,11 +8,12 @@ export default function Home () {
     event.preventDefault()
     const form = event.currentTarget
     const formData = new FormData(form)
-    console.log(Object.fromEntries(formData.entries()))
+    const { nombre } = Object.fromEntries(formData.entries())
+    console.log(nombre)
   }
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-24 m-2">
-      <form id='my-form' onSubmit={handleSubmit} >
+    <main className='flex flex-col items-start justify-start min-h-screen p-24 m-2'>
+      <form id='my-form' onSubmit={handleSubmit}>
         <Input
           id='nombre'
           name='nombre'
@@ -28,10 +29,11 @@ export default function Home () {
       </form>
       <button form='my-form'>Enviar</button>
 
+
       <Image
-        src="/vercel.svg"
-        alt="Vercel Logo"
-        className="dark:invert"
+        src='/vercel.svg'
+        alt='Vercel Logo'
+        className='dark:invert'
         width={100}
         height={24}
         priority
