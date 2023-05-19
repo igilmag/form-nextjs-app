@@ -1,4 +1,4 @@
-import { Logo } from '@/components/Logo'
+import Header from '@/components/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -17,9 +17,7 @@ export default function RootLayout ({
   return (
     <html lang='es'>
       <body className={inter.className}>
-        <header className='flex justify-center mt-2'>
-          <Logo />
-        </header>
+        <Header />
         {children}
       </body>
     </html>
