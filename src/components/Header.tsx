@@ -8,6 +8,10 @@ const routes = [
     route: '/'
   },
   {
+    label: 'Posts',
+    route: 'posts'
+  },
+  {
     label: 'Form',
     route: 'form'
   }

@@ -1,7 +1,7 @@
-function Page () {
+function FormPage () {
   return (
     <div>page</div>
   )
 }
 
-export default Page
+export default FormPage

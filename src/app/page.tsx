@@ -29,7 +29,6 @@ export default function Home () {
       </form>
       <button form='my-form'>Enviar</button>
 
-
       <Image
         src='/vercel.svg'
         alt='Vercel Logo'
