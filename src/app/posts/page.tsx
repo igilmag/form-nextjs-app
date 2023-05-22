@@ -1,5 +1,5 @@
-
-import { LikeButton } from './LikeButton'
+'use client'
+import { LikeButton } from '@/components/LikeButton'
 import { Data, fetchData } from './fetchData'
 
 export default async function PostsPage () {
